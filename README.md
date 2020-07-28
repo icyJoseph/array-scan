@@ -1,6 +1,6 @@
 # Scan
 
-Inspired by Rust's iterator [scan](https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.scan) method.
+> Inspired by Rust's iterator [scan](https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.scan) method.
 
 `scan`, unlike reduce, does a fold where on every iteration, a piece of state is avaiable. This piece of state is not necessarily equal to the returned structural transformation.
 
@@ -31,7 +31,9 @@ for (const element of iterator) {
 
 The code above doubles an element if the previous element was not a multiple of two.
 
-A more complicated use case, take from the tests of this library, showing that `scan` supports method chaining with native `map`, `filter` and `reduce`.
+A more complicated use case, taken from the tests of this library.
+
+> Notice that `scan` supports method chaining with native `map`, `filter` and `reduce`.
 
 ```ts
 enum Print {
